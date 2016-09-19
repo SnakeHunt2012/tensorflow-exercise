@@ -33,6 +33,6 @@ def main():
     accuracy_tsr = tf.reduce_mean(tf.cast(correct_tsr, tf.float32))
     print session.run(accuracy_tsr, feed_dict = {x_tsr: mnist.test.images, y_true_tsr: mnist.test.labels})
 
-def main():
-
+if __name__ == "__main__":
+    
     main()
